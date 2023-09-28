@@ -20,6 +20,7 @@ header {
   background-image: url(../images/Rectangle\ 31.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 header .box {
   width: 100%;
@@ -52,6 +53,9 @@ header .box .box-1 ul li {
   letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
+}
+header .box .box-1 span {
+  display: none;
 }
 header .box .box-1 button {
   padding: 14px 35px;
@@ -236,6 +240,38 @@ header:active {
   color: #000000;
   margin-bottom: 8px;
 }
+.section-2 .box-group .box .box-2 {
+  width: 250px;
+}
+.section-2 .box-group .box .box-2 img {
+  width: 100%;
+}
+.section-2 .box-group .box .box-2 h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  color: #000000;
+  margin-top: 35px;
+}
+.section-2 .box-group .box .box-2 .item {
+  width: 250px;
+}
+.section-2 .box-group .box .box-2 .item .item-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-2 .box-group .box .box-2 p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 60%;
+  color: #000000;
+  margin-bottom: 8px;
+}
 .section-2 .box-group .foot {
   display: flex;
   justify-content: center;
@@ -275,7 +311,7 @@ header:active {
 }
 .section-3 .box-group .box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .section-3 .box-group .box .box-1 {
@@ -451,4 +487,487 @@ footer .box-group .box .box-4 .tittle-1 button {
   text-align: left;
   color: #FFFFFF;
   border: none;
+}
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  header .box {
+    padding: 17.5px 100px;
+  }
+  header .box .box-1 h2 {
+    font-size: 12px;
+  }
+  header .box .box-1 ul {
+    gap: 25px;
+  }
+  header .box .box-1 ul li {
+    font-size: 9px;
+  }
+  header .box .box-1 button {
+    padding: 7px 17.5px;
+    font-size: 8px;
+  }
+  header .box .box-2 {
+    margin-top: 106px;
+    margin-bottom: 122px;
+  }
+  header .box .box-2 h1 {
+    width: 402px;
+    font-size: 32.5px;
+    margin-bottom: 15px;
+  }
+  header .box .box-2 p {
+    width: 229px;
+    font-size: 9px;
+    margin-bottom: 20px;
+  }
+  header .box .box-2 button {
+    padding: 9px 23px;
+    font-size: 8px;
+  }
+  .section-1 .box-group {
+    padding: 70px 100px;
+  }
+  .section-1 .box-group h2 {
+    font-size: 21.5px;
+    margin-bottom: 10px;
+  }
+  .section-1 .box-group p {
+    width: 367.5px;
+    font-size: 9px;
+    margin-bottom: 25px;
+  }
+  .section-1 .box-group .box {
+    gap: 14.5px;
+  }
+  .section-1 .box-group .box .box-1 {
+    width: 140px;
+  }
+  .section-1 .box-group .box .box-1 h3 {
+    font-size: 12px;
+    margin-top: 17.5px;
+  }
+  .section-1 .box-group .box .box-1 p {
+    font-size: 9px;
+    margin: 5px 13.5px 16.5px 13.5px;
+  }
+  .section-2 .box-group {
+    padding: 70px 0px;
+  }
+  .section-2 .box-group .item h2 {
+    font-size: 21.5px;
+    margin-bottom: 10px;
+  }
+  .section-2 .box-group .item p {
+    width: 367.5px;
+    font-size: 9px;
+    margin-bottom: 50px;
+  }
+  .section-2 .box-group .box {
+    gap: 14.5px;
+  }
+  .section-2 .box-group .box .box-1 {
+    width: 125px;
+  }
+  .section-2 .box-group .box .box-1 h3 {
+    font-size: 12px;
+  }
+  .section-2 .box-group .box .box-1 .item {
+    width: 125px;
+  }
+  .section-2 .box-group .box .box-1 p {
+    font-size: 8px;
+    margin-bottom: 4px;
+  }
+  .section-2 .box-group .box .box-2 {
+    width: 125px;
+    display: none;
+  }
+  .section-2 .box-group .box .box-2 h3 {
+    font-size: 12px;
+    margin-top: 17.5px;
+  }
+  .section-2 .box-group .box .box-2 .item {
+    width: 125px;
+  }
+  .section-2 .box-group .box .box-2 p {
+    font-size: 8px;
+    margin-bottom: 4px;
+  }
+  .section-2 .box-group .foot {
+    margin-top: 26px;
+    gap: 25px;
+  }
+  .section-3 .box-group {
+    padding: 120px 100px;
+  }
+  .section-3 .box-group .item h2 {
+    font-size: 21.5px;
+    margin-bottom: 10px;
+  }
+  .section-3 .box-group .item p {
+    width: 367.5px;
+    font-size: 9px;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .section-3 .box-group {
+    padding: 70px 100px;
+  }
+  .section-3 .box-group .box .box-1 {
+    width: 45%;
+  }
+  .section-3 .box-group .box .box-1 img {
+    margin-bottom: 17.5px;
+  }
+  .section-3 .box-group .box .box-1 .tittle-1 h3 {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .section-3 .box-group .box .box-1 .tittle-1 p {
+    font-size: 9px;
+    margin-bottom: 5px;
+  }
+  .section-3 .box-group .box .box-1 .tittle-1 b {
+    font-size: 10px;
+  }
+  .section-3 .box-group .box .box-2 {
+    width: 45%;
+  }
+  .section-3 .box-group .box .box-2 .box-3 img {
+    width: 115px;
+    height: 85px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 {
+    padding: 5px 10px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 h3 {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 p {
+    font-size: 9px;
+    margin-bottom: 5px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 b {
+    font-size: 10px;
+  }
+  footer .box-group {
+    padding: 70px 100px;
+  }
+  footer .box-group .box .box-1 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  footer .box-group .box .box-1 p {
+    font-size: 8px;
+    margin-bottom: 5px;
+  }
+  footer .box-group .box .box-1 .images {
+    gap: 13.5px;
+  }
+  footer .box-group .box .box-2 ul li {
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+  footer .box-group .box .box-3 ul li {
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+  footer .box-group .box .box-4 h3 {
+    font-size: 10px;
+    margin-bottom: 21px;
+  }
+  footer .box-group .box .box-4 .tittle-1 {
+    gap: 15px;
+  }
+  footer .box-group .box .box-4 .tittle-1 input {
+    font-size: 9px;
+    padding: 5px 10px;
+  }
+  footer .box-group .box .box-4 .tittle-1 button {
+    padding: 5px 16px;
+    font-size: 9px;
+  }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+  .section-3 .box-group {
+    padding: 35px 50px;
+  }
+  .section-3 .box-group .box .box-1 {
+    width: 45%;
+  }
+  .section-3 .box-group .box .box-1 img {
+    margin-bottom: 8.75px;
+  }
+  .section-3 .box-group .box .box-1 .tittle-1 h3 {
+    font-size: 5px;
+    margin-bottom: 2.5px;
+  }
+  .section-3 .box-group .box .box-1 .tittle-1 p {
+    font-size: 4.5px;
+    margin-bottom: 2.5px;
+  }
+  .section-3 .box-group .box .box-1 .tittle-1 b {
+    font-size: 5px;
+  }
+  .section-3 .box-group .box .box-2 {
+    width: 45%;
+  }
+  .section-3 .box-group .box .box-2 .box-3 img {
+    width: 57.5px;
+    height: 42.5px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 {
+    padding: 2.5px 5px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 h3 {
+    font-size: 5px;
+    margin-bottom: 2.5px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 p {
+    font-size: 4.5px;
+    margin-bottom: 2.5px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 b {
+    font-size: 5px;
+  }
+  footer .box-group {
+    padding: 35px 50px;
+  }
+  footer .box-group .box .box-1 h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  footer .box-group .box .box-1 p {
+    font-size: 4px;
+    margin-bottom: 2.5px;
+  }
+  footer .box-group .box .box-1 .images {
+    gap: 6.73px;
+  }
+  footer .box-group .box .box-2 ul li {
+    font-size: 4.5px;
+    margin-bottom: 5px;
+  }
+  footer .box-group .box .box-3 ul li {
+    font-size: 4.5px;
+    margin-bottom: 5px;
+  }
+  footer .box-group .box .box-4 h3 {
+    font-size: 5px;
+    margin-bottom: 10.5px;
+  }
+  footer .box-group .box .box-4 .tittle-1 {
+    gap: 7.5px;
+  }
+  footer .box-group .box .box-4 .tittle-1 input {
+    font-size: 4.5px;
+    padding: 2.5px 5px;
+  }
+  footer .box-group .box .box-4 .tittle-1 button {
+    padding: 2.5px 8px;
+    font-size: 4.5px;
+  }
+}
+@media (min-width: 200px) and (max-width: 600px) {
+  header .box {
+    padding: 8.75px 50px;
+  }
+  header .box .box-1 h2 {
+    font-size: 6px;
+  }
+  header .box .box-1 ul {
+    gap: 12.5px;
+  }
+  header .box .box-1 ul li {
+    font-size: 4.5px;
+  }
+  header .box .box-1 button {
+    padding: 3.5px 8.75px;
+    font-size: 4px;
+  }
+  header .box .box-2 {
+    margin-top: 53px;
+    margin-bottom: 61px;
+  }
+  header .box .box-2 h1 {
+    width: 201px;
+    font-size: 16.25px;
+    margin-bottom: 7.5px;
+  }
+  header .box .box-2 p {
+    width: 114.5px;
+    font-size: 4.5px;
+    margin-bottom: 10px;
+  }
+  header .box .box-2 button {
+    padding: 4.5px 11.5px;
+    font-size: 4px;
+  }
+  .section-1 .box-group {
+    padding: 35px 50px;
+  }
+  .section-1 .box-group h2 {
+    font-size: 10.75px;
+    margin-bottom: 5px;
+  }
+  .section-1 .box-group p {
+    width: 183.75px;
+    font-size: 4.5px;
+    margin-bottom: 12.5px;
+  }
+  .section-1 .box-group .box {
+    gap: 7.25px;
+  }
+  .section-1 .box-group .box .box-1 {
+    width: 70px;
+  }
+  .section-1 .box-group .box .box-1 h3 {
+    font-size: 6px;
+    margin-top: 8.75px;
+  }
+  .section-1 .box-group .box .box-1 p {
+    font-size: 4.5px;
+    margin: 2.5px 6.75px 8.25px 6.75px;
+  }
+  .section-2 .box-group {
+    padding: 35px 0px;
+  }
+  .section-2 .box-group .item h2 {
+    font-size: 10.75px;
+    margin-bottom: 5px;
+  }
+  .section-2 .box-group .item p {
+    width: 183.75px;
+    font-size: 4.5px;
+    margin-bottom: 25px;
+  }
+  .section-2 .box-group .box {
+    gap: 7.25px;
+  }
+  .section-2 .box-group .box .box-1 {
+    width: 62.5px;
+  }
+  .section-2 .box-group .box .box-1 h3 {
+    font-size: 6px;
+  }
+  .section-2 .box-group .box .box-1 .item {
+    width: 62.5px;
+  }
+  .section-2 .box-group .box .box-1 p {
+    font-size: 4px;
+    margin-bottom: 2px;
+  }
+  .section-2 .box-group .box .box-2 {
+    width: 62.5px;
+    display: none;
+  }
+  .section-2 .box-group .box .box-2 h3 {
+    font-size: 6px;
+    margin-top: 8.75px;
+  }
+  .section-2 .box-group .box .box-2 .item {
+    width: 62.5px;
+  }
+  .section-2 .box-group .box .box-2 p {
+    font-size: 4px;
+    margin-bottom: 2px;
+  }
+  .section-2 .box-group .foot {
+    margin-top: 13px;
+    gap: 12.5px;
+  }
+  .section-3 .box-group {
+    padding: 60px 50px;
+  }
+  .section-3 .box-group .item h2 {
+    font-size: 10.75px;
+    margin-bottom: 5px;
+  }
+  .section-3 .box-group .item p {
+    width: 183.75px;
+    font-size: 4.5px;
+    margin-bottom: 12.5px;
+  }
+}
+@media (min-width: 200px) and (max-width: 600px) {
+  .section-3 .box-group {
+    padding: 17.5px 25px;
+  }
+  .section-3 .box-group .box .box-1 {
+    width: 45%;
+  }
+  .section-3 .box-group .box .box-1 img {
+    margin-bottom: 4.375px;
+  }
+  .section-3 .box-group .box .box-1 .tittle-1 h3 {
+    font-size: 1.25px;
+    margin-bottom: 1.25px;
+  }
+  .section-3 .box-group .box .box-1 .tittle-1 p {
+    font-size: 2.25px;
+    margin-bottom: 1.25px;
+  }
+  .section-3 .box-group .box .box-1 .tittle-1 b {
+    font-size: 2.5px;
+  }
+  .section-3 .box-group .box .box-2 {
+    width: 45%;
+  }
+  .section-3 .box-group .box .box-2 .box-3 img {
+    width: 28.75px;
+    height: 21.25px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 {
+    padding: 1.25px 2.5px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 h3 {
+    font-size: 2.5px;
+    margin-bottom: 1.25px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 p {
+    font-size: 2.25px;
+    margin-bottom: 1.25px;
+  }
+  .section-3 .box-group .box .box-2 .box-3 .tittle-1 b {
+    font-size: 2.5px;
+  }
+  footer .box-group {
+    padding: 17.5px 25px;
+  }
+  footer .box-group .box .box-1 h2 {
+    font-size: 6px;
+    margin-bottom: 5px;
+  }
+  footer .box-group .box .box-1 p {
+    font-size: 2px;
+    margin-bottom: 1.25px;
+  }
+  footer .box-group .box .box-1 .images {
+    gap: 3.365px;
+  }
+  footer .box-group .box .box-2 ul li {
+    font-size: 2.25px;
+    margin-bottom: 2.5px;
+  }
+  footer .box-group .box .box-3 ul li {
+    font-size: 2.25px;
+    margin-bottom: 2.5px;
+  }
+  footer .box-group .box .box-4 h3 {
+    font-size: 2.5px;
+    margin-bottom: 5.25px;
+  }
+  footer .box-group .box .box-4 .tittle-1 {
+    gap: 3.75px;
+  }
+  footer .box-group .box .box-4 .tittle-1 input {
+    font-size: 2.25px;
+    padding: 1.25px 2.5px;
+  }
+  footer .box-group .box .box-4 .tittle-1 button {
+    padding: 1.25px 4px;
+    font-size: 2.25px;
+  }
 }/*# sourceMappingURL=style.css.map */
