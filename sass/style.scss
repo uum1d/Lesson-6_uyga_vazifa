@@ -254,7 +254,15 @@ header:active {
                     .item-1 {
                         display: flex;
                         align-items: center;
-                        justify-content: space-between;
+                        gap: 20px;
+                        .style-1{
+                            span{
+                                font-size: 24px;
+                            }
+                        }
+                        p{
+                            font-size: 24px;
+                        }
                     }
                 }
 
@@ -1002,25 +1010,22 @@ footer {
 
 @media (min-width:200px) and (max-width:600px) {
     header {
+        background-position:right;
         .box {
             padding: 8.75px 50px;
 
             .box-1 {
                 h2 {
-                    font-size: 6px;
+                    font-size: 12px;
                 }
 
                 ul {
-                    gap: 12.5px;
-
-                    li {
-                        font-size: 4.5px;
-                    }
+                    display: none;
                 }
 
                 button {
                     padding: 3.5px 8.75px;
-                    font-size: 4px;
+                    font-size: 8px;
                 }
             }
 
@@ -1029,20 +1034,22 @@ footer {
                 margin-bottom: 61px;
 
                 h1 {
-                    width: 201px;
-                    font-size: 16.25px;
+                    max-width: 200px;
+                    line-height: 36px;
+                    font-size: 32.5px;
                     margin-bottom: 7.5px;
                 }
 
                 p {
-                    width: 114.5px;
-                    font-size: 4.5px;
+                    max-width: 200px;
+                    line-height: 14.5px;
+                    font-size: 9px;
                     margin-bottom: 10px;
                 }
 
                 button {
                     padding: 4.5px 11.5px;
-                    font-size: 4px;
+                    font-size: 8px;
                 }
             }
         }
@@ -1053,13 +1060,14 @@ footer {
             padding: 35px 50px;
 
             h2 {
-                font-size: 10.75px;
+                font-size: 16.125px;
                 margin-bottom: 5px;
             }
 
             p {
-                width: 183.75px;
-                font-size: 4.5px;
+                max-width: 183.75px;
+                font-size: 9px;
+                line-height: 14.5px;
                 margin-bottom: 12.5px;
             }
 
@@ -1067,15 +1075,16 @@ footer {
                 gap: 7.25px;
 
                 .box-1 {
-                    width: 70px;
+                    max-width: 70px;
 
                     h3 {
-                        font-size: 6px;
+                        font-size: 9px;
                         margin-top: 8.75px;
                     }
 
                     p {
-                        font-size: 4.5px;
+                        font-size: 6.75px;
+                        line-height: 14.5px;
                         margin: 2.5px 6.75px 8.25px 6.75px;
                     }
                 }
@@ -1089,13 +1098,15 @@ footer {
 
             .item {
                 h2 {
-                    font-size: 10.75px;
+                    font-size: 16.125px;
+                    line-height: 30px;
                     margin-bottom: 5px;
                 }
 
                 p {
-                    width: 183.75px;
-                    font-size: 4.5px;
+                    max-width: 183.75px;
+                    font-size: 9px;
+                    line-height: 14,5px;
                     margin-bottom: 25px;
                 }
             }
@@ -1104,19 +1115,34 @@ footer {
                 gap: 7.25px;
 
                 .box-1 {
-                    width: 62.5px;
+                    max-width: 62.5px;
 
                     h3 {
-                        font-size: 6px;
+                        font-size: 9px;
+                        margin-top: 17.5px;
                     }
 
                     .item {
-                        width: 62.5px;
-
+                        max-width: 62.5px;
+                        .item-1{
+                            gap: 5px;
+                            .style-1{
+                                span{
+                                    font-size: 15px;
+                                }
+                                
+                            }
+                            p {
+                                font-size: 9px;
+                                margin-bottom: 2px;
+                            }
+                        }
+                        
                     }
 
                     p {
-                        font-size: 4px;
+                        font-size: 8px;
+                        line-height: 12px;
                         margin-bottom: 2px;
                     }
                 }
@@ -1142,6 +1168,14 @@ footer {
             }
 
             .foot {
+                .img-1{
+                    width: 10px;
+                    height: 8px;
+                }
+                .img-2{
+                    width: 100px;
+                    height: 8px;
+                }
                 margin-top: 13px;
                 gap: 12.5px;
             }
@@ -1154,13 +1188,16 @@ footer {
 
             .item {
                 h2 {
-                    font-size: 10.75px;
+                    font-size: 21px;
+                    line-height: 30px;
                     margin-bottom: 5px;
                 }
 
                 p {
-                    width: 183.75px;
-                    font-size: 4.5px;
+                    max-width: 183.75px;
+                    font-size: 9px;
+                    font-weight: 200;
+                    line-height: 14.5px;
                     margin-bottom: 12.5px;
                 }
             }
@@ -1174,8 +1211,12 @@ footer {
             padding: 17.5px 25px;
 
             .box {
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
+                align-items:normal;
                 .box-1 {
-                    width: 45%;
+                    max-width: 100px;
 
                     img {
                         margin-bottom: 4.375px;
@@ -1183,45 +1224,53 @@ footer {
 
                     .tittle-1 {
                         h3 {
-                            font-size: 1.25px;
+                            font-size: 10px;
+                            line-height: 16px;
                             margin-bottom: 1.25px;
                         }
 
                         p {
-                            font-size: 2.25px;
+                            font-size: 5px;
+                            line-height: 14.5px;
                             margin-bottom: 1.25px;
                         }
 
                         b {
-                            font-size: 2.5px;
+                            font-size: 5px;
+                            line-height: 15px;
                         }
                     }
                 }
 
                 .box-2 {
-                    width: 45%;
+                    width: 120px;
 
                     .box-3 {
+                        width: 120px;
+                        margin-bottom: 15px;
                         img {
-                            width: 28.75px;
-                            height: 21.25px;
+                            max-width: 60px;
+                            height: 45px;
                         }
 
                         .tittle-1 {
                             padding: 1.25px 2.5px;
 
                             h3 {
-                                font-size: 2.5px;
+                                font-size: 5px;
+                                line-height: 8px;
                                 margin-bottom: 1.25px;
                             }
 
                             p {
-                                font-size: 2.25px;
+                                font-size: 4.5px;
+                                line-height: 7px;
                                 margin-bottom: 1.25px;
                             }
 
                             b {
                                 font-size: 2.5px;
+                                line-height: 7.5px;
                             }
                         }
                     }
@@ -1237,24 +1286,27 @@ footer {
             .box {
                 .box-1 {
                     h2 {
-                        font-size: 6px;
+                        font-size: 12px;
+                        line-height: 18px;
                         margin-bottom: 5px;
                     }
 
                     p {
-                        font-size: 2px;
+                        font-size: 8px;
+                        line-height: 13px;
                         margin-bottom: 1.25px;
                     }
 
                     .images {
-                        gap: 3.365px;
+                        gap: 3.365px;   
                     }
                 }
 
                 .box-2 {
                     ul {
                         li {
-                            font-size: 2.25px;
+                            font-size: 8px;
+                            line-height: 12px;
                             margin-bottom: 2.5px;
                         }
                     }
@@ -1262,8 +1314,10 @@ footer {
 
                 .box-3 {
                     ul {
+                    display: none;
                         li {
-                            font-size: 2.25px;
+                            font-size: 8px;
+                            line-height: 12px;
                             margin-bottom: 2.5px;
                         }
                     }
@@ -1271,7 +1325,7 @@ footer {
 
                 .box-4 {
                     h3 {
-                        font-size: 2.5px;
+                        font-size: 10px;
                         margin-bottom: 5.25px;
                     }
 
@@ -1279,13 +1333,13 @@ footer {
                         gap: 3.75px;
 
                         input {
-                            font-size: 2.25px;
-                            padding: 1.25px 2.5px;
+                            font-size: 8px;
+                            padding: 1px 2.5px;
                         }
 
                         button {
-                            padding: 1.25px 4px;
-                            font-size: 2.25px;
+                            padding: 1px 4px;
+                            font-size: 8px;
                         }
 
                     }
